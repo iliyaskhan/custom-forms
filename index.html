@@ -1,131 +1,164 @@
-<html>
+<!DOCTYPE html>
+<html lang="en-US">
 
     <head>
 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
         <title>Forminator | Custom Forms</title>
 
-        <link rel="stylesheet" type="text/css" href="css/github.css">
-        <link rel="stylesheet" type="text/css" href="css/front.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/github.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/front.css">
 
     </head>
 
-    <body class="sp-custom-forms">
+    <body>
+
+        <div class="sp-custom-forms">
+
+            <header class="sp-cforms-intro">
         
-        <h1>Forminator "Custom Forms"</h1>
+                <h1>Custom Forms</h1>
 
-        <h2>This is a sample page to preview custom forms markup and classes.</h2>
+                <h2>Please, click below to edit form settings.</h2>
 
-        <hr>
+                <div class="sp-cforms-settings">
 
-        <h3>Case #1</h3>
+                    <div id="sp-settings-design">
 
-        <p>Custom form with basic fields. Each field with all its parts enabled: main label, field label, required icon, description, and (if applicable) charact limit info.</p>
+                        <p>Choose form style</p>
 
-        <form id="forminator-module-30" class="forminator-custom-form forminator-design--flat">
+                        <label>
+                            <input id="appearance-form-style" name="form-style" value="flat" title="Forminator flat" type="radio" checked="checked">
+                            Flat
+                        </label>
 
-            <div class="forminator-row">
+                        <label>
+                            <input id="appearance-form-style" name="form-style" value="bold" title="Forminator bold" type="radio">
+                            Bold
+                        </label>
 
-                <div class="forminator-col forminator-col-6">
-
-                    <div class="forminator-field">
-
-                        <input type="text" class="forminator-field--text" required>
-
-                        <label class="forminator-field--label">First Name</label>
-
-                    </div>
-
-                </div>
-
-                <div class="forminator-col forminator-col-6">
-
-                    <div class="forminator-field">
-
-                        <input type="text" class="forminator-field--text" required>
-
-                        <label class="forminator-field--label">Last Name</label>
+                        <label>
+                            <input id="appearance-form-style" name="form-style" value="material" title="Forminator material" type="radio">
+                            Material
+                        </label>
 
                     </div>
 
                 </div>
 
-            </div>
+            </header>
 
-            <div class="forminator-row">
+            <form id="forminator-module-30" class="forminator-custom-form forminator-design--flat">
 
-                <div class="forminator-col forminator-col-12">
+                <div class="forminator-row">
 
-                    <div class="forminator-field">
+                    <div class="forminator-col forminator-col-6">
 
-                        <input type="text" class="forminator-field--text" required>
+                        <div class="forminator-field">
 
-                        <label class="forminator-field--label">Email</label>
+                            <input type="text" class="forminator-input" required>
 
-                        <label class="forminator-field--helper">This field is required. Please, fill it with your email address.</label>
+                            <label class="forminator-field--label">First Name</label>
 
-                        <label class="forminator-field--error">The email address you entered is not valid. Please, type it again.</label>
+                        </div>
+
+                    </div>
+
+                    <div class="forminator-col forminator-col-6">
+
+                        <div class="forminator-field">
+
+                            <input type="text" class="forminator-input" required>
+
+                            <label class="forminator-field--label">Last Name</label>
+
+                        </div>
 
                     </div>
 
                 </div>
 
-            </div>
+                <div class="forminator-row">
 
-            <div class="forminator-row">
+                    <div class="forminator-col forminator-col-12">
 
-                <div class="forminator-col forminator-col-4">
+                        <div class="forminator-field">
 
-                    <div class="forminator-field">
+                            <input type="text" class="forminator-input" required>
 
-                        <input type="text" class="forminator-field--text" required>
+                            <label class="forminator-field--label">Email</label>
 
-                        <label class="forminator-field--label">City</label>
+                            <label class="forminator-field--helper">This field is required. Please, fill it with your email address.</label>
 
-                    </div>
+                            <label class="forminator-field--error">The email address you entered is not valid. Please, type it again.</label>
 
-                </div>
-
-                <div class="forminator-col forminator-col-4">
-
-                    <div class="forminator-field">
-
-                        <input type="text" class="forminator-field--text" required>
-
-                        <label class="forminator-field--label">State</label>
+                        </div>
 
                     </div>
 
                 </div>
 
-                <div class="forminator-col forminator-col-4">
+                <div class="forminator-row">
 
-                    <div class="forminator-field">
+                    <div class="forminator-col forminator-col-4">
 
-                        <input type="text" class="forminator-field--text" required>
+                        <div class="forminator-field">
 
-                        <label class="forminator-field--label">Country</label>
+                            <input type="text" class="forminator-input" required>
+
+                            <label class="forminator-field--label">City</label>
+
+                        </div>
+
+                    </div>
+
+                    <div class="forminator-col forminator-col-4">
+
+                        <div class="forminator-field">
+
+                            <input type="text" class="forminator-input" required>
+
+                            <label class="forminator-field--label">State</label>
+
+                        </div>
+
+                    </div>
+
+                    <div class="forminator-col forminator-col-4">
+
+                        <div class="forminator-field">
+
+                            <input type="text" class="forminator-input" required>
+
+                            <label class="forminator-field--label">Country</label>
+
+                        </div>
 
                     </div>
 
                 </div>
 
-            </div>
+                <div class="forminator-row">
 
-            <div class="forminator-row">
+                    <div class="forminator-col forminator-col-12">
 
-                <div class="forminator-col forminator-col-12">
+                        <div class="forminator-field">
 
-                    <div class="forminator-field">
+                            <button class="forminator-field--button">READY TO SEND</button>
 
-                        <button class="forminator-field--button">READY TO SEND</button>
+                        </div>
 
                     </div>
 
                 </div>
 
-            </div>
+            </form>
 
-        </form>
+        </div>
+
+        <script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="assets/js/settings.js"></script>
 
     </body>
 
