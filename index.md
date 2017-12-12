@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Welcome to Forminator Front
 
 You can use the [editor on GitHub](https://github.com/iamleigh/forminator-front/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 
