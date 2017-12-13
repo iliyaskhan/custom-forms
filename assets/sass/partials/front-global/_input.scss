@@ -28,6 +28,7 @@
         }
     }
 
+    // DESIGN flat
     &.forminator-design--flat {
 
         .forminator-input {
@@ -46,6 +47,7 @@
         }
     }
 
+    // DESIGN bold
     &.forminator-design--bold {
 
         .forminator-input {
@@ -72,10 +74,13 @@
         }
     }
 
+    // DESIGN material
     &.forminator-design--material {
 
         .forminator-input {
+            padding-right: 0;
             padding-bottom: 9px;
+            padding-left: 0;
             border: 0;
             border-bottom-width: 1px;
             border-bottom-style: solid;
@@ -83,6 +88,8 @@
             &:focus {
                 padding-bottom: 8px;
                 border-bottom-width: 2px;
+                outline: none;
+                box-shadow: none;
 
                 // REMOVE when color pickers and
                 // default color palettes are defined

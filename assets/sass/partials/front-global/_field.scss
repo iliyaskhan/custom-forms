@@ -1,116 +1,245 @@
-.forminator-custom-form .forminator-field {
-    margin: 10px 0;
+.forminator-custom-form {
 
-    .forminator-field--main,
-    .forminator-field--label {
-        min-height: 20px;
-        display: flex;
-        justify-content: flex-end;
-
-        .forminator-label--main {
-            flex: 1;
-            
-            &:not(:only-child) {
-                margin-right: 10px;
-            }
-        }
-
-        .forminator-label--helper {
-            flex: 1;
-
-            &:not(:only-child) {
-                margin-right: 10px;
-            }
-        }
-
-        .forminator-icon {
-            height: 20px;
-            display: flex;
-            flex: 0 0 auto;
-            padding-top: 4px;
-
-            svg {
-                display: block;
-            }
-
-            &:not(:only-child) {
-                margin-left: 10px;
-            }
-        }
-
-        &.forminator-no_placeholder {
-
-            .forminator-label--main,
-            .forminator-label--helper {
-                opacity: 0.3;
-                pointer-events: none;
-                transition: transform 1s linear, 0.2s ease;
-            }
-        }
-    }
-
-    .forminator-field--main {
-        margin-bottom: 10px;
-
-        &.forminator-no_placeholder {
-
-            .forminator-label--main,
-            .forminator-label--helper {
-                transform: translate(10px,40px);
-            }
-        }
-    }
-
-    .forminator-field--label {
-
-        &.forminator-no_placeholder {
-
-            .forminator-label--main,
-            .forminator-label--helper {
-                transform: translate(10px,30px);
-            }
-        }
-    }
-    
-    .forminator-field--helper {
-        display: flex;
-        justify-content: space-between;
-
-        .forminator-label--helper {
-            margin: 0 10px;
-
-            + .forminator-label--limit {
-                flex: 0 0 auto;
-            }
-
-            &:first-child {
-                margin-left: 0;
-            }
-
-            &:last-child {
-                margin-right: 0;
-            }
-        }
-
-        .forminator-label--limit {
-            flex: 1;
-        }
-    }
-
-    &.forminator-is_active,
-    &.forminator-is_filled {
+    .forminator-field {
+        margin: 10px 0;
 
         .forminator-field--main,
+        .forminator-field--label {
+            min-height: 20px;
+            display: flex;
+            justify-content: flex-end;
+    
+            .forminator-label--main {
+                flex: 1;
+                
+                &:not(:only-child) {
+                    margin-right: 10px;
+                }
+            }
+    
+            .forminator-label--helper {
+                flex: 1;
+    
+                &:not(:only-child) {
+                    margin-right: 10px;
+                }
+            }
+    
+            .forminator-icon {
+                height: 20px;
+                display: flex;
+                flex: 0 0 auto;
+                padding-top: 4px;
+    
+                svg {
+                    display: block;
+                }
+    
+                &:not(:only-child) {
+                    margin-left: 10px;
+                }
+            }
+    
+            &.forminator-no_placeholder {
+    
+                .forminator-label--main,
+                .forminator-label--helper {
+                    opacity: 0.3;
+                    pointer-events: none;
+                    transition: transform 1s linear, 0.2s ease;
+                }
+            }
+        }
+
+        .forminator-field--main {
+            margin-bottom: 10px;
+    
+            &.forminator-no_placeholder {
+    
+                .forminator-label--main,
+                .forminator-label--helper {
+                    transform: translate(10px,40px);
+                }
+            }
+        }
+
         .forminator-field--label {
 
             &.forminator-no_placeholder {
 
                 .forminator-label--main,
                 .forminator-label--helper {
-                    opacity: 1;
-                    pointer-events: auto;
-                    margin-left: -10px;
-                    transform: translate(10px, 0);
+                    transform: translate(10px,30px);
+                }
+            }
+        }
+
+        .forminator-field--helper {
+            display: flex;
+            justify-content: space-between;
+    
+            .forminator-label--helper {
+                margin: 0 10px;
+    
+                + .forminator-label--limit {
+                    flex: 0 0 auto;
+                }
+    
+                &:first-child {
+                    margin-left: 0;
+                }
+    
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+    
+            .forminator-label--limit {
+                flex: 1;
+            }
+        }
+
+        &.forminator-is_active,
+        &.forminator-is_filled {
+    
+            .forminator-field--main,
+            .forminator-field--label {
+    
+                &.forminator-no_placeholder {
+    
+                    .forminator-label--main,
+                    .forminator-label--helper {
+                        opacity: 1;
+                        pointer-events: auto;
+                    }
+                }
+            }
+        }
+    }
+
+    // DESIGN flat
+    &.forminator-design--flat {
+
+        .forminator-field {
+
+            .forminator-field--main {
+
+                &.forminator-no_placeholder {
+
+                    .forminator-label--main,
+                    .forminator-label--helper {
+                        transform: translate(10px,40px);
+                    }
+                }
+            }
+
+            .forminator-field--label {
+
+                &.forminator-no_placeholder {
+
+                    .forminator-label--main,
+                    .forminator-label--helper {
+                        transform: translate(10px,30px);
+                    }
+                }
+            }
+
+            &.forminator-is_active,
+            &.forminator-is_filled {
+
+                .forminator-field--main,
+                .forminator-field--label {
+                    
+                    .forminator-label--main,
+                    .forminator-label--helper {
+                        margin-left: -10px;
+                        transform: translate(10px,0);
+                    }
+                }
+            }
+        }
+    }
+
+    // DESIGN bold
+    &.forminator-design--bold {
+
+        .forminator-field {
+
+            .forminator-field--main {
+
+                &.forminator-no_placeholder {
+
+                    .forminator-label--main,
+                    .forminator-label--helper {
+                        transform: translate(10px,40px);
+                    }
+                }
+            }
+
+            .forminator-field--label {
+
+                &.forminator-no_placeholder {
+
+                    .forminator-label--main,
+                    .forminator-label--helper {
+                        transform: translate(10px,30px);
+                    }
+                }
+            }
+
+            &.forminator-is_active,
+            &.forminator-is_filled {
+
+                .forminator-field--main,
+                .forminator-field--label {
+                    
+                    .forminator-label--main,
+                    .forminator-label--helper {
+                        margin-left: -10px;
+                        transform: translate(10px,0);
+                    }
+                }
+            }
+        }
+    }
+
+    // DESIGN material
+    &.forminator-design--material {
+
+        .forminator-field {
+
+            .forminator-field--main {
+
+                &.forminator-no_placeholder {
+
+                    .forminator-label--main,
+                    .forminator-label--helper {
+                        transform: translateY(40px);
+                    }
+                }
+            }
+
+            .forminator-field--label {
+
+                &.forminator-no_placeholder {
+
+                    .forminator-label--main,
+                    .forminator-label--helper {
+                        transform: translateY(30px);
+                    }
+                }
+            }
+
+            &.forminator-is_active,
+            &.forminator-is_filled {
+
+                .forminator-field--main,
+                .forminator-field--label {
+                    
+                    .forminator-label--main,
+                    .forminator-label--helper {
+                        transform: translateY(0);
+                    }
                 }
             }
         }
