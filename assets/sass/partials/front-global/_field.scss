@@ -99,6 +99,37 @@
             }
         }
 
+        .forminator-row {
+            margin-top: 20px;
+            margin-bottom: 20px;
+
+            &:first-child {
+                margin-top: 0;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        .forminator-col {
+            margin-top: 10px;
+            margin-bottom: 10px;
+
+            &:first-child {
+                margin-top: 0;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            @include screen("small") {
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+        }
+
         &.forminator-is_active,
         &.forminator-is_filled {
     
