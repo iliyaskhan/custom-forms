@@ -11,7 +11,188 @@
         clip: rect(0 0 0 0) !important;
 
         + .select2 {
+            width: 100% !important;
+            cursor: pointer;
             display: block;
+            line-height: 20px;
+
+            .selection {
+                display: block;
+            }
+
+            .select2-selection {
+                display: block;
+                transition: 0.3s ease;
+
+                .select2-selection__rendered {
+                    display: block;
+                }
+            }
+
+            // REMOVE when color pickers and
+            // default color palettes are defined
+            color: #1E1E1E;
+            font-size: 16px;
+            font-family: $font;
+            font-weight: 400;
         }
+    }
+
+    // DESIGN flat
+    &.forminator-design--flat {
+
+        .forminator-select + .select2 {
+
+            .select2-selection {
+                padding: 9px;
+                border-width: 1px;
+                border-style: solid;
+                
+                // REMOVE when color pickers and
+                // default color palettes are defined
+                border-color: rgba(0,0,0,0.02);
+                background-color: #E6E6E6;
+            }
+
+            &:hover {
+
+                .select2-selection {
+
+                    // REMOVE when color pickers and
+                    // default color palettes are defined
+                    border-color: rgba(0,0,0,0.2);
+                    background-color: #E0E0E0;
+                }
+            }
+        }
+    }
+
+    // DESIGN bold
+    &.forminator-design--bold {
+
+        .forminator-select + .select2 {
+
+            .select2-selection {
+                padding: 7px;
+                border-width: 3px;
+                border-style: solid;
+                
+                // REMOVE when color pickers and
+                // default color palettes are defined
+                border-color: rgba(0,0,0,0.05);
+                background-color: #F2F2F2;
+            }
+
+            &:hover {
+
+                .select2-selection {
+
+                    // REMOVE when color pickers and
+                    // default color palettes are defined
+                    background-color: #E6E6E6;
+                }
+            }
+
+            &.select2-container--open {
+
+                .select2-selection {
+
+                    // REMOVE when color pickers and
+                    // default color palettes are defined
+                    border-color: rgba(0,0,0,0.55);
+                    background-color: $color-white;
+                }
+            }
+        }
+    }
+
+    // DESIGN material
+    &.forminator-design--material {
+
+        .forminator-select + .select2 {
+
+            .select2-selection {
+                padding: 10px 0 9px;
+                border-bottom-width: 1px;
+                border-bottom-style: solid;
+                
+                // REMOVE when color pickers and
+                // default color palettes are defined
+                border-bottom-color: #8A8A8A;
+            }
+
+            &.select2-container--open {
+
+                .select2-selection {
+                    padding-bottom: 8px;
+                    border-bottom-width: 2px;
+
+                    // REMOVE when color pickers and
+                    // default color palettes are defined
+                    border-bottom-color: #2979FF;
+                }
+            }
+        }
+    }
+}
+
+.forminator-dropdown {
+    display: block;
+    background: $color-white;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.25);
+
+    .select2-search {
+        display: none;
+    }
+
+    .select2-results {
+        display: block;
+
+        .select2-results__options {
+            max-height: 200px;
+            overflow-x: hidden;
+            overflow-y: auto;
+            display: block;
+            margin: 0;
+            padding: 0;
+            border: 0;
+
+            .select2-results__option {
+                cursor: pointer;
+                display: block;
+                margin: 0;
+                padding: 4px 10px;
+                border: 0;
+                line-height: 20px;
+                transition: 0.3s ease;
+
+                &:hover {
+                    background: #E6E6E6;
+                }
+
+                &[aria-selected=true] {
+                    background: $color-gray--dark;
+                    color: $color-white;
+                }
+
+                // REMOVE when color pickers and
+                // default color palettes are defined
+                font-size: 14px;
+                font-family: $font;
+                font-weight: 400;
+            }
+        }
+    }
+
+    &.forminator-dropdown--flat {
+        //background-color: red;
+    }
+
+    &.forminator-dropdown--bold {
+        //background-color: green;
+    }
+
+    &.forminator-dropdown--material {
+        //background-color: blue;
     }
 }

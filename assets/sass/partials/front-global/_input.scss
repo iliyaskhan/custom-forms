@@ -36,6 +36,14 @@
             border-width: 1px;
             border-style: solid;
 
+            &:hover {
+                
+                // REMOVE when color pickers and
+                // default color palettes are defined
+                border-color: rgba(0,0,0,0.2);
+                background-color: #E0E0E0;
+            }
+
             &:focus {
                 outline: none;
                 box-shadow: none;
