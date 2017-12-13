@@ -24,14 +24,14 @@
                 '</div></div>';
 
                 if (this.value === 'true') {
-                    if ( $main.length ) {
-                        $main.append( $svg );
-                    } else {
-                        if ( $label.length ) {
-                            $label.append( $svg );
-                        } else {
-                            $field.prepend( $fullSVG );
-                        }
+                    if ( $field.find('.forminator-field--main:first-child').length ) {
+                        $field.find('.forminator-field--main:first-child').append( $svg );
+                    }
+                    if ( $field.find('.forminator-field--label:first-child').length ) {
+                        $field.find('.forminator-field--label:first-child').append( $svg );
+                    }
+                    if ( ! $main.length && ! $label.length ) {
+                        $field.prepend( $fullSVG );
                     }
                 }
 
