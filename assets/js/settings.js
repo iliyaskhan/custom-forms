@@ -91,11 +91,27 @@
                 $input = $this.find('.forminator-input');
 
             $input.focus(function(e){
+
                 $(this).parent('.forminator-field').addClass('forminator-is_active');
                 e.stopPropagation();
+
             }).blur(function(e){
+                
                 $(this).parent('.forminator-field').removeClass('forminator-is_active');
                 e.stopPropagation();
+                
+            });
+
+            $input.change(function(e){
+                
+                if ( $(this) !== "" ) {
+                    $(this).parent('.forminator-field').addClass( "forminator-is_filled" );
+                } else {
+                    $(this).parent('.forminator-field').removeClass( "forminator-is_filled" );
+                }
+                
+                e.stopPropagation();
+
             });
 
         });

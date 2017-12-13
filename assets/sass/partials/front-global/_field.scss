@@ -3,6 +3,25 @@
 
     .forminator-field--main,
     .forminator-field--label {
+        min-height: 20px;
+        display: flex;
+        justify-content: flex-end;
+
+        .forminator-label--main {
+            flex: 1;
+            
+            &:not(:only-child) {
+                margin-right: 10px;
+            }
+        }
+
+        .forminator-label--helper {
+            flex: 1;
+
+            &:not(:only-child) {
+                margin-right: 10px;
+            }
+        }
 
         .forminator-icon {
             height: 20px;
@@ -18,66 +37,37 @@
                 margin-left: 10px;
             }
         }
-    }
-
-    .forminator-field--main {
-        min-height: 20px;
-        display: flex;
-        justify-content: flex-end;
-
-        .forminator-label--main {
-            flex: 1;
-            
-            &:not(:only-child) {
-                margin-right: 10px;
-            }
-        }
 
         &.forminator-no_placeholder {
 
-            .forminator-label--main {
-                pointer-events: none;
+            .forminator-label--main,
+            .forminator-label--helper {
                 opacity: 0.3;
-                font-weight: 400;
-                transform: translate(10px,40px);
+                pointer-events: none;
                 transition: transform 1s linear, 0.2s ease;
-
-                // REMOVE when color pickers and
-                // default color palettes are defined
-                font-size: 16px;
             }
         }
+    }
 
-        &:first-child {
-            margin-bottom: 10px;
+    .forminator-field--main {
+        margin-bottom: 10px;
+
+        &.forminator-no_placeholder {
+
+            .forminator-label--main,
+            .forminator-label--helper {
+                transform: translate(10px,40px);
+            }
         }
     }
 
     .forminator-field--label {
-        min-height: 20px;
-        display: flex;
-        justify-content: flex-end;
-        position: relative;
-
-        .forminator-label--helper {
-            flex: 1;
-
-            &:not(:only-child) {
-                margin-right: 10px;
-            }
-        }
 
         &.forminator-no_placeholder {
 
+            .forminator-label--main,
             .forminator-label--helper {
-                position: absolute;
-                bottom: -30px;
-                left: 10px;
-                color: rgba(140, 140, 140, 0.5);
-
-                // REMOVE when color pickers and
-                // default color palettes are defined
-                font-size: 16px;
+                transform: translate(10px,30px);
             }
         }
     }
@@ -107,22 +97,20 @@
         }
     }
 
-    &.forminator-is_active {
+    &.forminator-is_active,
+    &.forminator-is_filled {
 
-        .forminator-field--main {
+        .forminator-field--main,
+        .forminator-field--label {
 
             &.forminator-no_placeholder {
-                
-                .forminator-label--main {
-                    pointer-events: auto;
+
+                .forminator-label--main,
+                .forminator-label--helper {
                     opacity: 1;
+                    pointer-events: auto;
                     margin-left: -10px;
-                    transform: translate(10px,0);
-                    
-                    // REMOVE when color pickers and
-                    // default color palettes are defined
-                    font-size: 13px;
-                    font-weight: 500;
+                    transform: translate(10px, 0);
                 }
             }
         }

@@ -94,7 +94,10 @@
         padding: 20px;
         background: $color-silver;
         color: $color-gray--dark;
-        text-align: center;
+        
+        h1, h2 {
+            text-align: center;
+        }
     }
 
     .sp-cforms-content {
