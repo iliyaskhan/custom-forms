@@ -1,0 +1,51 @@
+.forminator-custom-form {
+    display: block;
+    padding: 20px;
+
+    .forminator-row {
+        display: flex;
+        flex-direction: column;
+        margin: 0 -10px;
+
+        .forminator-col {
+            flex: 0 0 auto;
+            padding: 0 10px;
+        }
+
+        .forminator-col-4 {
+            max-width: 100%;
+            flex-basis: 100%;
+
+            @include screen("small") {
+                max-width: 33.33%;
+                flex-basis: 33.33%;
+            }
+        }
+
+        .forminator-col-6 {
+            max-width: 100%;
+            flex-basis: 100%;
+
+            @include screen("small") {
+                max-width: 50%;
+                flex-basis: 50%;
+            }
+        }
+
+        .forminator-col-12 {
+            max-width: 100%;
+            flex-basis: 100%;
+        }
+
+        @include screen("small") {
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+    }
+
+    // REMOVE when color pickers and
+    // default color palettes are defined
+    border-radius: 5px;
+    border: 1px solid #E9E9E9;
+    background: $color-white;
+}

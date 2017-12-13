@@ -1,0 +1,130 @@
+.forminator-custom-form .forminator-field {
+    margin: 10px 0;
+
+    .forminator-field--main,
+    .forminator-field--label {
+
+        .forminator-icon {
+            height: 20px;
+            display: flex;
+            flex: 0 0 auto;
+            padding-top: 4px;
+
+            svg {
+                display: block;
+            }
+
+            &:not(:only-child) {
+                margin-left: 10px;
+            }
+        }
+    }
+
+    .forminator-field--main {
+        min-height: 20px;
+        display: flex;
+        justify-content: flex-end;
+
+        .forminator-label--main {
+            flex: 1;
+            
+            &:not(:only-child) {
+                margin-right: 10px;
+            }
+        }
+
+        &.forminator-no_placeholder {
+
+            .forminator-label--main {
+                pointer-events: none;
+                opacity: 0.3;
+                font-weight: 400;
+                transform: translate(10px,40px);
+                transition: transform 1s linear, 0.2s ease;
+
+                // REMOVE when color pickers and
+                // default color palettes are defined
+                font-size: 16px;
+            }
+        }
+
+        &:first-child {
+            margin-bottom: 10px;
+        }
+    }
+
+    .forminator-field--label {
+        min-height: 20px;
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+
+        .forminator-label--helper {
+            flex: 1;
+
+            &:not(:only-child) {
+                margin-right: 10px;
+            }
+        }
+
+        &.forminator-no_placeholder {
+
+            .forminator-label--helper {
+                position: absolute;
+                bottom: -30px;
+                left: 10px;
+                color: rgba(140, 140, 140, 0.5);
+
+                // REMOVE when color pickers and
+                // default color palettes are defined
+                font-size: 16px;
+            }
+        }
+    }
+    
+    .forminator-field--helper {
+        display: flex;
+        justify-content: space-between;
+
+        .forminator-label--helper {
+            margin: 0 10px;
+
+            + .forminator-label--limit {
+                flex: 0 0 auto;
+            }
+
+            &:first-child {
+                margin-left: 0;
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+        .forminator-label--limit {
+            flex: 1;
+        }
+    }
+
+    &.forminator-is_active {
+
+        .forminator-field--main {
+
+            &.forminator-no_placeholder {
+                
+                .forminator-label--main {
+                    pointer-events: auto;
+                    opacity: 1;
+                    margin-left: -10px;
+                    transform: translate(10px,0);
+                    
+                    // REMOVE when color pickers and
+                    // default color palettes are defined
+                    font-size: 13px;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}

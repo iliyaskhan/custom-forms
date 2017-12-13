@@ -1,0 +1,109 @@
+// Load modules
+@import "modules/modules";
+
+// Load reset
+@import "partials/basic/reset";
+
+// Load GP styles
+.sp-custom-forms {
+    width: 100%;
+    max-width: 1080px;
+    display: block;
+    margin: 0 auto;
+    padding: 0 20px;
+    border: 0;
+
+    * {
+        box-sizing: border-box;
+    }
+
+    h1 {
+        margin-top: 10px;
+        padding-bottom: 5px;
+        font: 700 23px/32px $font--alt;
+        text-transform: uppercase;
+
+        &:first-child {
+            margin-top: 0;
+        }
+
+        &:last-child {
+            padding-bottom: 0;
+        }
+    }
+
+    h2, h3 {
+        margin-top: 5px;
+        padding-bottom: 10px;
+        font: 700 15px/24px $font;
+
+        &:first-child {
+            margin-top: 0;
+        }
+
+        &:last-child {
+            padding-bottom: 0;
+        }
+    }
+
+    p {
+        font: 400 15px/20px $font;
+        letter-spacing: -0.15px;
+
+        strong {
+            font-weight: 700;
+        }
+    }
+
+    ul {
+        margin: 10px 0 20px;
+        padding: 20px;
+        background: $color-silver;
+
+        li {
+            margin: 10px 0;
+            color: $color-blue;
+            font: 400 13px/16px $font;
+
+            strong {
+                color: $color-gray--dark;
+                font-weight: 700;
+            }
+
+            &:first-child {
+                margin-top: 0;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    
+    hr {
+        height: 1px;
+        display: block;
+        margin: 20px 0;
+        padding: 0;
+        border: 0;
+        background: rgba(0,0,0,0.1);
+    }
+
+    .sp-cforms-intro {
+        display: block;
+        padding: 20px;
+        background: $color-silver;
+        color: $color-gray--dark;
+        text-align: center;
+    }
+
+    .sp-cforms-content {
+        display: block;
+        padding: 20px;
+        background: $color-white;
+
+        .sp-cforms-part {
+            margin: 20px 0;
+        }
+    }
+}

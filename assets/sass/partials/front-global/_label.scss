@@ -1,0 +1,42 @@
+.forminator-custom-form {
+
+    .forminator-label--main {
+        cursor: text;
+        display: block;
+        line-height: 20px;
+
+        // REMOVE when color pickers and
+        // default color palettes are defined
+        color: $color-gray--dark;
+        font-size: 13px;
+        font-weight: 500;
+        font-family: $font;
+    }
+
+    .forminator-label--helper {
+        cursor: text;
+        display: block;
+        line-height: 20px;
+
+        // REMOVE when color pickers and
+        // default color palettes are defined
+        color: #6D6D6D;
+        font-size: 12px;
+        font-weight: 400;
+        font-family: $font;
+    }
+
+    .forminator-label--limit {
+        cursor: text;
+        display: block;
+        line-height: 20px;
+        text-align: right;
+
+        // REMOVE when color pickers and
+        // default color palettes are defined
+        color: #6D6D6D;
+        font-size: 12px;
+        font-weight: 400;
+        font-family: $font;
+    }
+}

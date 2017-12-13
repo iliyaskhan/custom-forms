@@ -1,0 +1,101 @@
+.forminator-custom-form {
+
+    .forminator-input {
+        width: 100%;
+        height: 40px;
+        display: block;
+        padding: 10px;
+        border-color: transparent;
+        background: transparent;
+        box-shadow: none;
+        line-height: 20px;
+        transition: 0.3s ease;
+
+        &:-moz-placeholder {
+            color: #8C8C8C;
+        }
+    
+        &::-moz-placeholder {
+            color: #8C8C8C;
+        }
+
+        &:-ms-input-placeholder {
+            color: #8C8C8C;
+        }
+
+        &::-webkit-input-placeholder {
+            color: #8C8C8C;
+        }
+    }
+
+    &.forminator-design--flat {
+
+        .forminator-input {
+            padding: 9px;
+            border-width: 1px;
+            border-style: solid;
+
+            // REMOVE when color pickers and
+            // default color palettes are defined
+            border-color: rgba(0,0,0,0.02);
+            background-color: #E6E6E6;
+            color: #1E1E1E;
+            font-size: 16px;
+            font-family: $font;
+            font-weight: 400;
+        }
+    }
+
+    &.forminator-design--bold {
+
+        .forminator-input {
+            padding: 7px;
+            border-width: 3px;
+            border-style: solid;
+
+            &:hover {
+
+                // REMOVE when color pickers and
+                // default color palettes are defined
+                color: #808080;
+                background-color: #E6E6E6;
+            }
+
+            // REMOVE when color pickers and
+            // default color palettes are defined
+            border-color: rgba(0,0,0,0.05);
+            background-color: #F2F2F2;
+            color: #1E1E1E;
+            font-size: 16px;
+            font-family: $font;
+            font-weight: 400;
+        }
+    }
+
+    &.forminator-design--material {
+
+        .forminator-input {
+            padding-bottom: 9px;
+            border: 0;
+            border-bottom-width: 1px;
+            border-bottom-style: solid;
+
+            &:focus {
+                padding-bottom: 8px;
+                border-bottom-width: 2px;
+
+                // REMOVE when color pickers and
+                // default color palettes are defined
+                border-bottom-color: #2979FF;
+            }
+
+            // REMOVE when color pickers and
+            // default color palettes are defined
+            border-bottom-color: #8A8A8A;
+            color: #1E1E1E;
+            font-size: 16px;
+            font-family: $font;
+            font-weight: 400;
+        }
+    }
+}
