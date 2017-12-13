@@ -9,19 +9,7 @@
                 allowClear: false,
                 minimumResultsForSearch: Infinity,
                 containerCssClass: "forminator-select2",
-                //dropdownCssClass: "forminator-dropdown"
-            });
-
-            $('.forminator-select--flat').select2({
-                dropdownCssClass: "forminator-dropdown forminator-dropdown--flat"
-            });
-
-            $('.forminator-select--bold').select2({
-                dropdownCssClass: "forminator-dropdown forminator-dropdown--bold"
-            });
-
-            $('.forminator-select--material').select2({
-                dropdownCssClass: "forminator-dropdown forminator-dropdown--material"
+                dropdownCssClass: "forminator-dropdown"
             });
             
         });
@@ -90,33 +78,24 @@
                 if (this.value === 'flat') {
 
                     $form.removeClass('forminator-design--bold');
-                    $form.removeClass('forminator-design--bold');
-                    $form.removeClass('forminator-design--material');
                     $form.removeClass('forminator-design--material');
                     $form.addClass('forminator-design--flat');
-                    $form.addClass('forminator-select--flat');
 
                 }
 
                 if (this.value === 'bold') {
 
                     $form.removeClass('forminator-design--flat');
-                    $form.removeClass('forminator-select--flat');
                     $form.removeClass('forminator-design--material');
-                    $form.removeClass('forminator-select--material');
                     $form.addClass('forminator-design--bold');
-                    $form.addClass('forminator-select--bold');
 
                 }
 
                 if (this.value === 'material') {
 
                     $form.removeClass('forminator-design--flat');
-                    $form.removeClass('forminator-select--flat');
                     $form.removeClass('forminator-design--bold');
-                    $form.removeClass('forminator-select--bold');
                     $form.addClass('forminator-design--material');
-                    $form.addClass('forminator-select--material');
                     
                 }
 
