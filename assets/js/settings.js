@@ -3,6 +3,17 @@
 
     (function(){
 
+        $(document).ready(function() {
+
+            $(".forminator-select").select2({
+                allowClear: false,
+                minimumResultsForSearch: Infinity,
+                containerCssClass: "forminator-select2",
+                dropdownCssClass: "forminator-dropdown"
+            });
+            
+        });
+
         $("#sp-settings-required").ready(function(){
 
             var $this = $(this),
