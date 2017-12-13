@@ -36,6 +36,16 @@
             border-width: 1px;
             border-style: solid;
 
+            &:focus {
+                outline: none;
+                box-shadow: none;
+
+                // REMOVE when color pickers and
+                // default color palettes are defined
+                border-color: rgba(0,0,0,0.1);
+                background-color: $color-white;
+            }
+
             // REMOVE when color pickers and
             // default color palettes are defined
             border-color: rgba(0,0,0,0.02);
@@ -61,6 +71,16 @@
                 // default color palettes are defined
                 color: #808080;
                 background-color: #E6E6E6;
+            }
+
+            &:focus {
+                outline: none;
+                box-shadow: none;
+
+                // REMOVE when color pickers and
+                // default color palettesare defined
+                border-color: rgba(0,0,0,0.55);
+                background-color: $color-white;
             }
 
             // REMOVE when color pickers and

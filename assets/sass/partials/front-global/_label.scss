@@ -39,4 +39,19 @@
         font-weight: 400;
         font-family: $font;
     }
+
+    .forminator-label--validation {
+        cursor: text;
+        display: block;
+        margin: 10px 0 0;
+        padding: 5px 10px;
+        background: $color-red;
+        color: $color-white;
+
+        // REMOVE when color pickers and
+        // default color palettes are defined
+        font-size: 12px;
+        font-weight: 400;
+        font-family: $font;
+    }
 }

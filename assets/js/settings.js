@@ -105,9 +105,9 @@
             $input.change(function(e){
                 
                 if ( $(this) !== "" ) {
-                    $(this).parent('.forminator-field').addClass( "forminator-is_filled" );
+                    $(this).parent('.forminator-field').addClass('forminator-is_filled');
                 } else {
-                    $(this).parent('.forminator-field').removeClass( "forminator-is_filled" );
+                    $(this).parent('.forminator-field').removeClass('forminator-is_filled');
                 }
                 
                 e.stopPropagation();
