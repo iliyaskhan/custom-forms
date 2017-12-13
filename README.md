@@ -2,7 +2,7 @@
 
 ## FIELD: Text Input
 
-### Variation 1: When we have only Main Label
+#### Variation 1: When we have only Main Label
 
 1. Main container markup: `<div class="forminator-field--main">...</div>`
 2. Main label markup: `<label class="forminator-label--main">Sample label</label>`
