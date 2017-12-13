@@ -36,7 +36,18 @@
                 }
 
                 if (this.value === 'false') {
-                    $label.find('.forminator-icon').remove();
+                    if ( $main.length && $main.find('.forminator-label--main').length ) {
+                        $main.find('.forminator-icon').remove();
+                    }
+                    if ( $main.length && ! $main.find('.forminator-label--main').length ) {
+                        $main.remove();
+                    }
+                    if ( $label.length && $label.find('.forminator-label--helper').length ) {
+                        $label.find('.forminator-icon').remove();
+                    }
+                    if ( $label.length && ! $label.find('.forminator-label--helper').length ) {
+                        $label.remove();
+                    }
                 }
 
             });
