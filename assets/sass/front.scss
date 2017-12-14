@@ -2,6 +2,7 @@
 @import "modules/modules";
 
 // Load basics
+@import "partials/front-basics/reset";
 @import "partials/front-basics/grid";
 @import "partials/front-basics/screen-reader";
 
@@ -10,3 +11,4 @@
 @import "partials/front-global/label";
 @import "partials/front-global/input";
 @import "partials/front-global/select";
+@import "partials/front-global/checkbox";
