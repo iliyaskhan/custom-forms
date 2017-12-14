@@ -26,6 +26,33 @@
         &::-webkit-input-placeholder {
             color: #8C8C8C;
         }
+
+        &:hover {
+
+            // REMOVE when color pickers and
+            // default color palettes are defined
+            color: #808080;
+            background-color: #E6E6E6;
+        }
+
+        &:focus {
+            outline: none;
+            box-shadow: none;
+
+            // REMOVE when color pickers and
+            // default color palettes are defined
+            border-color: rgba(0,0,0,0.55);
+            background-color: $color-white;
+        }
+
+        // REMOVE when color pickers and
+        // default color palettes are defined
+        border-color: rgba(0,0,0,0.05);
+        background-color: #F2F2F2;
+        color: #1E1E1E;
+        font-size: 16px;
+        font-family: $font;
+        font-weight: 400;
     }
 
     // DESIGN flat
@@ -35,33 +62,6 @@
             padding: 9px;
             border-width: 1px;
             border-style: solid;
-
-            &:hover {
-                
-                // REMOVE when color pickers and
-                // default color palettes are defined
-                border-color: rgba(0,0,0,0.2);
-                background-color: #E0E0E0;
-            }
-
-            &:focus {
-                outline: none;
-                box-shadow: none;
-
-                // REMOVE when color pickers and
-                // default color palettes are defined
-                border-color: rgba(0,0,0,0.1);
-                background-color: $color-white;
-            }
-
-            // REMOVE when color pickers and
-            // default color palettes are defined
-            border-color: rgba(0,0,0,0.02);
-            background-color: #E6E6E6;
-            color: #1E1E1E;
-            font-size: 16px;
-            font-family: $font;
-            font-weight: 400;
         }
     }
 
@@ -72,33 +72,6 @@
             padding: 7px;
             border-width: 3px;
             border-style: solid;
-
-            &:hover {
-
-                // REMOVE when color pickers and
-                // default color palettes are defined
-                color: #808080;
-                background-color: #E6E6E6;
-            }
-
-            &:focus {
-                outline: none;
-                box-shadow: none;
-
-                // REMOVE when color pickers and
-                // default color palettesare defined
-                border-color: rgba(0,0,0,0.55);
-                background-color: $color-white;
-            }
-
-            // REMOVE when color pickers and
-            // default color palettes are defined
-            border-color: rgba(0,0,0,0.05);
-            background-color: #F2F2F2;
-            color: #1E1E1E;
-            font-size: 16px;
-            font-family: $font;
-            font-weight: 400;
         }
     }
 
@@ -118,19 +91,7 @@
                 border-bottom-width: 2px;
                 outline: none;
                 box-shadow: none;
-
-                // REMOVE when color pickers and
-                // default color palettes are defined
-                border-bottom-color: #2979FF;
             }
-
-            // REMOVE when color pickers and
-            // default color palettes are defined
-            border-bottom-color: #8A8A8A;
-            color: #1E1E1E;
-            font-size: 16px;
-            font-family: $font;
-            font-weight: 400;
         }
     }
 }
