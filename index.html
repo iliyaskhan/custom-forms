@@ -21,9 +21,28 @@
         
                 <h1>Custom Forms</h1>
 
-                <h2>Please, click below to edit form settings.</h2>
+                <h2>Please, click below to edit form design.</h2>
 
-                <div class="sp-cforms-settings">
+                <div id="sp-settings-design">
+
+                    <label>
+                        <input id="appearance-form-style" name="form-style" value="flat" title="Forminator flat" type="radio" checked="checked">
+                        Flat
+                    </label>
+
+                    <label>
+                        <input id="appearance-form-style" name="form-style" value="bold" title="Forminator bold" type="radio">
+                        Bold
+                    </label>
+
+                    <label>
+                        <input id="appearance-form-style" name="form-style" value="material" title="Forminator material" type="radio">
+                        Material
+                    </label>
+
+                </div>
+
+                <!-- <div class="sp-cforms-settings">
 
                     <div id="sp-settings-required">
 
@@ -41,32 +60,7 @@
 
                     </div>
 
-                </div>
-
-                <div class="sp-cforms-settings">
-
-                    <div id="sp-settings-design">
-
-                        <p>Choose form style</p>
-
-                        <label>
-                            <input id="appearance-form-style" name="form-style" value="flat" title="Forminator flat" type="radio" checked="checked">
-                            Flat
-                        </label>
-
-                        <label>
-                            <input id="appearance-form-style" name="form-style" value="bold" title="Forminator bold" type="radio">
-                            Bold
-                        </label>
-
-                        <label>
-                            <input id="appearance-form-style" name="form-style" value="material" title="Forminator material" type="radio">
-                            Material
-                        </label>
-
-                    </div>
-
-                </div>
+                </div> -->
 
             </header>
 
@@ -76,134 +70,139 @@
 
                     <h3>FIELD: Text</h3>
 
-                    <ul>
-                        <li><strong>Type:</strong> single line text</li>
-                        <li><strong>Main label:</strong> What is your favourite word?</li>
-                        <li><strong>Field label:</strong> Tell us, don't be shy</li>
-                        <li><strong>Placeholder:</strong> eg. Red</li>
-                        <li><strong>Description:</strong> We will not sell this information, promise.</li>
-                        <li><strong>Input limit:</strong> 0 / 180</li>
-                    </ul>
+                    <div id="field-text-settings" class="sp-settings">
 
-                    <form class="forminator-custom-form forminator-design--flat">
+                        <div class="sp-settings--option">
 
-                        <div class="forminator-row">
+                            <p>Required field</p>
 
-                            <div class="forminator-col forminator-col-12">
+                            <div class="sp-settings--values">
 
-                                <div class="forminator-field">
+                                <label>
+                                    <input id="text-required" name="text-required" value="true" title="True" type="radio">
+                                    True
+                                </label>
 
-                                    <div class="forminator-field--main">
-
-                                        <label class="forminator-label--main">What is your favourite word?</label>
-
-                                    </div>
-
-                                    <div class="forminator-field--label">
-
-                                        <label class="forminator-label--helper">Tell us, don't be shy</label>
-
-                                    </div>
-
-                                    <input type="text" class="forminator-input" placeholder="eg. Red" />
-
-                                    <div class="forminator-field--helper">
-
-                                        <label class="forminator-label--helper">We will not sell this information, promise.</label>
-
-                                        <label class="forminator-label--limit">0 / 180</label>
-
-                                    </div>
-
-                                </div>
+                                <label>
+                                    <input id="text-required" name="text-required" value="false" title="False" type="radio" checked="checked">
+                                    False
+                                </label>
 
                             </div>
 
                         </div>
 
-                        <div class="forminator-row">
+                        <div class="sp-settings--option">
 
-                            <div class="forminator-col forminator-col-12">
+                            <p>Main label</p>
 
-                                <div class="forminator-field">
+                            <div class="sp-settings--values">
 
-                                    <div class="forminator-field--main">
+                                <label>
+                                    <input id="text-main-label" name="text-main-label" value="true" title="True" type="radio">
+                                    True
+                                </label>
 
-                                        <label class="forminator-label--main">What is your favourite word?</label>
-
-                                    </div>
-
-                                    <div class="forminator-field--label forminator-no_placeholder">
-
-                                        <label class="forminator-label--helper">Tell us, don't be shy</label>
-
-                                    </div>
-
-                                    <input type="text" class="forminator-input" />
-
-                                    <div class="forminator-field--helper">
-
-                                        <label class="forminator-label--helper">We will not sell this information, promise.</label>
-
-                                        <label class="forminator-label--limit">0 / 180</label>
-
-                                    </div>
-
-                                </div>
+                                <label>
+                                    <input id="text-main-label" name="text-main-label" value="false" title="False" type="radio" checked="checked">
+                                    False
+                                </label>
 
                             </div>
 
                         </div>
 
-                        <div class="forminator-row">
+                        <div class="sp-settings--option">
 
-                            <div class="forminator-col forminator-col-12">
+                            <p>Field label</p>
 
-                                <div class="forminator-field">
+                            <div class="sp-settings--values">
 
-                                    <div class="forminator-field--main forminator-no_placeholder">
+                                <label>
+                                    <input id="text-field-label" name="text-field-label" value="true" title="True" type="radio">
+                                    True
+                                </label>
 
-                                        <label class="forminator-label--main">What is your favourite word?</label>
-
-                                    </div>
-
-                                    <input type="text" class="forminator-input" />
-
-                                    <div class="forminator-field--helper">
-
-                                        <label class="forminator-label--helper">We will not sell this information, promise.</label>
-
-                                        <label class="forminator-label--limit">0 / 180</label>
-
-                                    </div>
-
-                                </div>
+                                <label>
+                                    <input id="text-field-label" name="text-field-label" value="false" title="False" type="radio" checked="checked">
+                                    False
+                                </label>
 
                             </div>
 
                         </div>
 
+                        <div class="sp-settings--option">
+
+                            <p>Placeholder</p>
+
+                            <div class="sp-settings--values">
+
+                                <label>
+                                    <input id="text-field-placeholder" name="text-field-placeholder" value="true" title="True" type="radio">
+                                    True
+                                </label>
+
+                                <label>
+                                    <input id="text-field-placeholder" name="text-field-placeholder" value="false" title="False" type="radio" checked="checked">
+                                    False
+                                </label>
+
+                            </div>
+
+                        </div>
+
+                        <div class="sp-settings--option">
+
+                            <p>Description</p>
+
+                            <div class="sp-settings--values">
+
+                                <label>
+                                    <input id="text-field-description" name="text-field-description" value="true" title="True" type="radio">
+                                    True
+                                </label>
+
+                                <label>
+                                    <input id="text-field-description" name="text-field-description" value="false" title="False" type="radio" checked="checked">
+                                    False
+                                </label>
+
+                            </div>
+
+                        </div>
+
+                        <div class="sp-settings--option">
+
+                            <p>Input limit</p>
+
+                            <div class="sp-settings--values">
+
+                                <label>
+                                    <input id="text-field-limit" name="text-field-limit" value="true" title="True" type="radio">
+                                    True
+                                </label>
+
+                                <label>
+                                    <input id="text-field-limit" name="text-field-limit" value="false" title="False" type="radio" checked="checked">
+                                    False
+                                </label>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <form id="forminator-module-text" class="forminator-custom-form forminator-design--flat">
+
                         <div class="forminator-row">
 
                             <div class="forminator-col forminator-col-12">
 
                                 <div class="forminator-field">
 
-                                    <div class="forminator-field--label forminator-no_placeholder">
-
-                                        <label class="forminator-label--helper">Tell us, don't be shy</label>
-
-                                    </div>
-
                                     <input type="text" class="forminator-input" />
-
-                                    <div class="forminator-field--helper">
-
-                                        <label class="forminator-label--helper">We will not sell this information, promise.</label>
-
-                                        <label class="forminator-label--limit">0 / 180</label>
-
-                                    </div>
 
                                 </div>
 
@@ -1170,6 +1169,8 @@
         <script type="text/javascript" src="assets/js/select2.full.min.js"></script>
 
         <script type="text/javascript" src="assets/js/settings.js"></script>
+        
+        <script type="text/javascript" src="assets/js/field-text.js"></script>
 
     </body>
 
