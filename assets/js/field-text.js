@@ -47,6 +47,32 @@
 
         });*/
 
+        $("input[type=radio][name=text-field-type]").on('change', function(e){
+            
+            if (this.value === 'text') {
+
+                if ( $formField.find( '.forminator-textarea' )[0].hasAttribute('placeholder') ) {
+                    $formField.find('.forminator-textarea').replaceWith('<input type="text" class="forminator-input" placeholder="eg. Red" />');
+                } else {
+                    $formField.find('.forminator-textarea').replaceWith('<input type="text" class="forminator-input" />');
+                }
+
+            }
+
+            if (this.value === 'textarea') {
+
+                if ( $formField.find( '.forminator-input' )[0].hasAttribute('placeholder') ) {
+                    $formField.find('.forminator-input').replaceWith('<textarea class="forminator-textarea" placeholder="eg. Red"></textarea>');
+                } else {
+                    $formField.find('.forminator-input').replaceWith('<textarea class="forminator-textarea"></textarea>');
+                }
+                
+            }
+
+            e.stopPropagation();
+
+        });
+
         $("input[type=radio][name=text-main-label]").on('change', function(e){
             
             if (this.value === 'true') {
@@ -103,10 +129,12 @@
             
             if (this.value === 'true') {
                 $formField.find('.forminator-input').attr('placeholder', 'eg. Red');
+                $formField.find('.forminator-textarea').attr('placeholder', 'eg. Red');
             }
 
             if (this.value === 'false') {
                 $formField.find('.forminator-input').removeAttr('placeholder');
+                $formField.find('.forminator-textarea').removeAttr('placeholder');
             }
 
             e.stopPropagation();
