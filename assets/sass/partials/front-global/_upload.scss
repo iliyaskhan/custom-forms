@@ -1,0 +1,20 @@
+.forminator-custom-form {
+
+    .forminator-upload {
+        display: flex;
+        margin: 5px 0;
+
+        .forminator-button {
+            flex: 0 0 auto;
+
+            + .forminator-label {
+                padding: 5px 0;
+            }
+        }
+
+        .forminator-label {
+            display: block;
+            flex: 0 1 auto;
+        }
+    }
+}
