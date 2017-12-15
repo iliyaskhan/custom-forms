@@ -127,8 +127,36 @@
     }
 
     // DESIGN bold
-    &.forminator-design--bold {}
+    &.forminator-design--bold {
+
+        .forminator-product {
+            
+            .forminator-product--variations {
+    
+                .forminator-pvar--item {
+    
+                    td {
+                        border-bottom-width: 3px;
+                    }
+                }
+            }
+        }
+    }
 
     // DESIGN material
-    &.forminator-design--material {}
+    &.forminator-design--material {
+
+        .forminator-product {
+            
+            .forminator-product--variations {
+    
+                .forminator-pvar--item {
+    
+                    td {
+                        border-bottom-width: 1px;
+                    }
+                }
+            }
+        }
+    }
 }
