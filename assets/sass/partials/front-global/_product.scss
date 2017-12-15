@@ -1,0 +1,162 @@
+.forminator-custom-form {
+
+    .forminator-product {
+        width: 100%;
+        table-layout: fixed;
+        border-spacing: 0;
+        border-collapse: collapse;
+        
+        .forminator-product--variations {
+
+            .forminator-pvar--item {
+
+                td {
+                    vertical-align: middle;
+                    padding: 10px 5px;
+                    border-style: solid;
+                    border-color: rgba(216,216,216,0.5);
+                    
+                    &:first-child {
+                        padding-left: 0;
+                    }
+
+                    &:last-child {
+                        padding-right: 0;
+                    }
+                }
+
+                .forminator-item--radio {
+                    width: 35px;
+
+                    &:first-child {
+                        width: 30px;
+                    }
+                }
+
+                .forminator-item--image {
+                    width: 50px;
+
+                    &:first-child {
+                        width: 45px;
+                    }
+                }
+
+                .forminator-item--name {
+
+                    .forminator-name--text,
+                    .forminator-name--price {
+                        padding: 0;
+                        border: 0;
+                        color: $color-gray--dark;
+                        font: 400 13px/15px $font;
+                        letter-spacing: 0;
+                    }
+
+                    .forminator-name--text {
+                        margin: 0 0 5px;
+
+                        @include screen("small") {
+                            margin: 0;
+                        }
+                    }
+
+                    .forminator-name--price {
+
+                        @include screen("small") {
+                            display: none;
+                        }
+                    }
+                }
+                
+                .forminator-item--quantity {
+                    width: 70px;
+                    padding-right: 0;
+                }
+
+                .forminator-item--price {
+                    width: 0;
+                    overflow: hidden;
+                    visibility: hidden;
+                    color: $color-gray--dark;
+                    font: 400 13px/15px $font;
+                    letter-spacing: 0;
+                    text-align: right;
+
+                    @include screen("small") {
+                        width: 90px;
+                        overflow: auto;
+                        visibility: visible;
+                    }
+                }
+            }
+        }
+
+        .forminator-product--total {
+
+            tr {
+
+                td {
+                    padding: 10px 0 0;
+                    color: $color-gray--dark;
+                    font-size: 13px;
+                    line-height: 16px;
+                    font-family: $font;
+                    font-weight: 500;
+                    letter-spacing: -0.22px;
+                    text-align: right;
+                }
+            }
+        }
+    }
+
+    // DESIGN flat
+    &.forminator-design--flat {
+
+        .forminator-product {
+            
+            .forminator-product--variations {
+    
+                .forminator-pvar--item {
+    
+                    td {
+                        border-bottom-width: 1px;
+                    }
+                }
+            }
+        }
+    }
+
+    // DESIGN bold
+    &.forminator-design--bold {
+
+        .forminator-product {
+            
+            .forminator-product--variations {
+    
+                .forminator-pvar--item {
+    
+                    td {
+                        border-bottom-width: 3px;
+                    }
+                }
+            }
+        }
+    }
+
+    // DESIGN material
+    &.forminator-design--material {
+
+        .forminator-product {
+            
+            .forminator-product--variations {
+    
+                .forminator-pvar--item {
+    
+                    td {
+                        border-bottom-width: 1px;
+                    }
+                }
+            }
+        }
+    }
+}

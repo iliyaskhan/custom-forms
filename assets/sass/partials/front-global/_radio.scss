@@ -1,0 +1,112 @@
+.forminator-custom-form {
+
+    .forminator-radio {
+        display: flex;
+        margin: 10px 0;
+
+        .forminator-radio--input {
+            width: 1px !important;
+            height: 1px !important;
+            position: absolute !important;
+            top: -9999px !important;
+            left: -9999px !important;
+            background: transparent !important;
+            box-shadow: none !important;
+
+            &:checked + .forminator-radio--design {
+
+                &:before {
+
+                    // REMOVE when color pickers and
+                    // default color palettes are defined
+                    background-color: #808080;
+                }
+
+                // REMOVE when color pickers and
+                // default color palettes are defined
+                border-color: #808080;
+                background-color: #E6E6E6;
+            }
+        }
+
+        .forminator-radio--design {
+            width: 25px;
+            height: 25px;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-style: solid;
+            border-radius: 30px;
+            font-size: 12px;
+            transition: 0.3s ease;
+
+            &:before {
+                content: " ";
+                width: 13px;
+                height: 13px;
+                display: block;
+                border-radius: 20px;
+
+                // REMOVE when color pickers and
+                // default color palettes are defined
+                background-color: #F2F2F2;
+            }
+
+            // REMOVE when color pickers and
+            // default color palettes are defined
+            border-color: rgba(0,0,0,0.05);
+            background-color: #F2F2F2;
+
+            + .forminator-radio--label {
+                margin-left: 10px;
+            }
+        }
+
+        .forminator-radio--label {
+            cursor: pointer;
+            line-height: 25px;
+
+            // REMOVE when color pickers and
+            // default color palettes are defined
+            color: #1E1E1E;
+            font-size: 14px;
+            font-family: $font;
+            font-weight: 400;
+        }
+    }
+
+    // DESIGN flat
+    &.forminator-design--flat {
+
+        .forminator-radio {
+
+            .forminator-radio--design {
+                border-width: 1px;
+            }
+        }
+    }
+
+    // DESIGN bold
+    &.forminator-design--bold {
+
+        .forminator-radio {
+
+            .forminator-radio--design {
+                border-width: 3px;
+            }
+        }
+    }
+
+    // DESIGN material
+    &.forminator-design--material {
+
+        .forminator-radio {
+
+            .forminator-radio--design {
+                border-width: 2px;
+            }
+        }
+    }
+}

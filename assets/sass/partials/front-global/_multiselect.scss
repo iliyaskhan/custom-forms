@@ -1,0 +1,96 @@
+.forminator-custom-form {
+
+    .forminator-multiselect {
+        height: 120px;
+        overflow-x: hidden;
+        overflow-y: auto;
+        margin: 10px 0;
+        padding: 0;
+        border-style: solid;
+
+        .forminator-multiselect--item {
+            margin: 1px 0;
+            padding: 0 1px;
+            border: 0;
+
+            input {
+                width: 1px !important;
+                height: 1px !important;
+                position: absolute !important;
+                top: -9999px !important;
+                left: -9999px !important;
+
+                &:checked + label {
+
+                    // REMOVE when color pickers and
+                    // default color palettes are defined
+                    background-color: #F2F2F2;
+                }
+            }
+
+            label {
+                cursor: pointer;
+                display: block;
+                margin: 0;
+                padding: 5px 10px;
+                border: 0;
+                transition: 0.3s ease;
+
+                &:hover {
+
+                    // REMOVE when color pickers and
+                    // default color palettes are defined
+                    color: #808080;
+                    background-color: #E6E6E6;
+                }
+
+                // REMOVE when color pickers and
+                // default color palettes are defined
+                color: #1E1E1E;
+                font-size: 16px;
+                font-family: $font;
+                font-weight: 400;
+            }
+
+            &:first-child {
+                margin-top: 0;
+                padding-top: 1px;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+                padding-bottom: 1px;
+            }
+        }
+
+        // REMOVE when color pickers and
+        // default color palettes are defined
+        border-color: rgba(0,0,0,0.05);
+        background-color: $color-white;
+    }
+
+    // DESIGN flat
+    &.forminator-design--flat {
+
+        .forminator-multiselect {
+            border-width: 1px;
+        }
+    }
+
+    // DESIGN bold
+    &.forminator-design--bold {
+
+        .forminator-multiselect {
+            border-width: 3px;
+        }
+    }
+
+    // DESIGN material
+    &.forminator-design--material {
+
+        .forminator-multiselect {
+            border-width: 2px;
+            border-radius: 2px;
+        }
+    }
+}

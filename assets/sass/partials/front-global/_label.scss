@@ -1,5 +1,18 @@
 .forminator-custom-form {
 
+    .forminator-label {
+        cursor: text;
+        display: inline-block;
+        line-height: 30px;
+
+        // REMOVE when color pickers and
+        // default color palettes are defined
+        color: $color-gray--dark;
+        font-size: 13px;
+        font-weight: 400;
+        font-family: $font;
+    }
+
     .forminator-label--main {
         cursor: text;
         display: block;
