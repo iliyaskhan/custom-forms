@@ -15,11 +15,17 @@
 
             &:checked + .forminator-radio--design {
 
+                &:before {
+
+                    // REMOVE when color pickers and
+                    // default color palettes are defined
+                    background-color: #808080;
+                }
+
                 // REMOVE when color pickers and
                 // default color palettes are defined
                 border-color: #808080;
                 background-color: #E6E6E6;
-                color: #808080;
             }
         }
 
@@ -37,14 +43,21 @@
             transition: 0.3s ease;
 
             &:before {
+                content: " ";
+                width: 15px;
+                height: 15px;
                 display: block;
+                border-radius: 20px;
+
+                // REMOVE when color pickers and
+                // default color palettes are defined
+                background-color: #F2F2F2;
             }
 
             // REMOVE when color pickers and
             // default color palettes are defined
             border-color: rgba(0,0,0,0.05);
             background-color: #F2F2F2;
-            color: #F2F2F2;
 
             + .forminator-radio--label {
                 margin-left: 10px;
