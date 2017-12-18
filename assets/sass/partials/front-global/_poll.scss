@@ -41,6 +41,7 @@
         list-style: none;
 
         .forminator-answer {
+            position: relative;
             margin: 10px 0;
             padding: 0;
             border: 0;
@@ -56,6 +57,9 @@
                 height: 1px !important;
                 opacity: 0 !important;
                 overflow: hidden !important;
+                position: absolute !important;
+                top: 0 !important;
+                left: 0 !important;
 
                 &:checked + label {
                     
@@ -155,5 +159,11 @@
             flex-wrap: wrap;
             flex-direction: row;
         }
+    }
+
+    .forminator-poll--chart {
+        max-width: 100%;
+        height: auto;
+        display: block;
     }
 }
