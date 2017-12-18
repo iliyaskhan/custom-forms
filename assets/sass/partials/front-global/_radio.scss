@@ -7,9 +7,7 @@
         .forminator-radio--input {
             width: 1px !important;
             height: 1px !important;
-            position: absolute !important;
-            top: -9999px !important;
-            left: -9999px !important;
+            opacity: 0 !important;
             background: transparent !important;
             box-shadow: none !important;
 
