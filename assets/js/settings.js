@@ -11,6 +11,8 @@
                 containerCssClass: "forminator-select2",
                 dropdownCssClass: "forminator-dropdown"
             });
+
+            $(".forminator-date input").datepicker();
             
         });
 

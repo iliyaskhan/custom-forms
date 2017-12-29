@@ -7,8 +7,6 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
 
 	grunt.initConfig({
-		
-		pkg: grunt.file.readJSON('package.json'),
 
 		sass: {
 			options: {
@@ -44,16 +42,6 @@ module.exports = function(grunt) {
 				files: {
 					'assets/css/github.css': ['assets/css/github.css'],
 					'assets/css/front.css': ['assets/css/front.css']
-				}
-			}
-		},
-
-		makepot: {
-			target: {
-				options: {
-					domainPath: 'languages/',
-					type: 'wp-plugin',
-					exclude: ['dist', 'node_modules', 'tests']
 				}
 			}
 		},

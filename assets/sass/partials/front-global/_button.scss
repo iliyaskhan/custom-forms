@@ -1,3 +1,79 @@
+.forminator-poll {
+
+    .forminator-button {
+        width: auto;
+        min-width: 100px;
+        height: 40px;
+        cursor: pointer;
+        display: inline-block;
+        margin: 0 10px;
+        padding: 10px 5px;
+        border: 0;
+        border-radius: 2px;
+        box-shadow: none;
+        font: 500 13px/20px $font;
+        text-decoration: none;
+        transition: 0.3s ease;
+
+        &, &:visited {
+
+            // REMOVE when color pickers and
+            // default color palettes are defined
+            background-color: $color-blue;
+            color: $color-white;
+        }
+
+        &:hover {
+
+            // REMOVE when color pickers and
+            // default color palettes are defined
+            background-color: $color-blue--dark;
+        }
+
+        &:active, &:focus {
+            outline: none;
+            box-shadow: none;
+
+            // REMOVE when color pickers and
+            // default color palettes are defined
+            background-color: $color-blue--dark;
+        }
+
+        &.forminator-button-ghost {
+            min-width: 1px;
+            height: auto;
+            padding: 0;
+            background: transparent;
+
+            &:hover {
+
+                // REMOVE when color pickers and
+                // default color palettes are defined
+                color: $color-blue--dark;
+            }
+
+            &:active, &:focus {
+    
+                // REMOVE when color pickers and
+                // default color palettes are defined
+                color: $color-blue--dark;
+            }
+
+            // REMOVE when color pickers and
+            // default color palettes are defined
+            color: $color-blue;
+        }
+
+        &:first-child {
+            margin-left: 0;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
 .forminator-custom-form {
 
     .forminator-button {

@@ -7,6 +7,9 @@
 @import "partials/front-basics/screen-reader";
 
 // Load global
+@import "partials/front-global/poll";
+@import "partials/front-global/quiz";
+@import "partials/front-global/date";
 @import "partials/front-global/field";
 @import "partials/front-global/label";
 @import "partials/front-global/input";
@@ -14,6 +17,7 @@
 @import "partials/front-global/total";
 @import "partials/front-global/image";
 @import "partials/front-global/button";
+@import "partials/front-global/result";
 @import "partials/front-global/select";
 @import "partials/front-global/upload";
 @import "partials/front-global/product";

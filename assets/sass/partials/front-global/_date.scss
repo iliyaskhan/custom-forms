@@ -1,0 +1,40 @@
+.forminator-custom-form {
+
+    .forminator-date {
+        position: relative;
+        
+        &:after {
+            content: "\220f";
+            speak: none;
+            display: none;
+            font-family: $font--icon !important;
+            font-style: normal;
+            font-weight: normal;
+            font-variant: normal;
+            line-height: 1em;
+            text-rendering: optimizeLegibility;
+            text-transform: none;
+            -moz-osx-font-smoothing: grayscale;
+            -webkit-font-smoothing: antialiased;
+
+            position: absolute;
+            top: 9px;
+            right: 10px;
+            font-size: 18px;
+            opacity: 0.3;
+        }
+
+        &.forminator-has_icon:after {
+            display: block;
+        }
+    }
+
+    // DESIGN flat
+    &.forminator-design--flat {}
+
+    // DESIGN bold
+    &.forminator-design--bold {}
+
+    // DESIGN material
+    &.forminator-design--material {}
+}
